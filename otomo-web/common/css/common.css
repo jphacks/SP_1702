@@ -61,3 +61,7 @@ img {
 .ml20{
 	margin-left: 20px;
 }
+
+.text-small{
+	font-size: 3vh;
+}
