@@ -70,3 +70,12 @@ img {
 .text-small{
 	font-size: 2vh;
 }
+
+.bg-yellow{
+	background-color: gold;
+}
+
+.btn-large{
+	color: 696969;
+	background-color:gold;
+}
