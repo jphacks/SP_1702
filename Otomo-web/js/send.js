@@ -64,10 +64,10 @@ function sendSoulInfo(ondevice, id) {
 
 function showSoul(){
   $soul = $("#soul");
-  $soul.hide();
+  $soul.show();
 }
 
 function hideSoul(){
   $soul = $("#soul");
-  $soul.show();
+  $soul.hide();
 }
