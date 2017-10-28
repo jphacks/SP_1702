@@ -36,28 +36,22 @@
 
 
   <!--トリガーボタン群 -->
-  <footer class="page-footer">
-    <div class="container">
-      <div class="row">
-        <div class="col l4 s12"> <!-- LINEアクションボタン -->
-          <a class="square_btn bg-linegreen btn-middle"
-          style="float:left" onclick="lineIntent()">Line</a>
-        </div>
-        <div class="col l4 s12"> <!-- 位置情報取得ボタン -->
-          <a class="square_btn bg-orange btn-middle" style="float:right" onclick="
-          tryGeolocation()">Geolocation</a>
-        </div>
-        <div class="col l4 s12"> <!-- otomo遷移ボタン -->
-          <a id="soulBtn" class="bg-yellow square_btn btn-large rad-button" onclick="getSoul()">Let's Go</a>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container">
-        © 2017 FUNtastic
-      </div>
-    </div>
-  </footer>
+  <div class="fixed-action-btn toolbar">
+    <a class="btn-floating btn-large red">
+      <i class="large material-icons">mode_edit</i>
+    </a>
+    <ul>
+      <li class="waves-effect waves-light"> <!-- LINEアクションボタン -->
+        <a href="#!" onclick="lineIntent()"><i class="material-icons">insert_chart</i></a>
+      </li>
+      <li class="waves-effect waves-light"> <!-- 位置情報取得ボタン -->
+        <a href="#!" onclick="tryGeolocation()"><i class="material-icons">format_quote</i></a>
+      </li>
+      <li class="waves-effect waves-light"> <!-- otomo遷移ボタン -->
+        <a href="#!" id="soulBtn" onclick="getSoul()"><i class="material-icons">publish</i></a>
+      </li>
+    </ul>
+  </div>
 
 
 </body>
