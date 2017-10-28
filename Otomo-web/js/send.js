@@ -1,5 +1,5 @@
 var on_device=false;
-var user_id = 1
+var user_id = 1;
 
 /*****************************************/
 /*************Soulの受信関数**************/
@@ -53,7 +53,7 @@ function sendSoulInfo(ondevice, id) {
  $.ajax({
    type: 'POST',
    url: "http://192.168.2.29:9000/soul",
-   data: data,
+   data: JSON.stringify(data),
    success: function(success){
      alert(success);
    }
