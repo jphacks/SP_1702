@@ -18,15 +18,21 @@ function sendSoulInfo(ondevice, id) {
   };
   alert(JSON.stringify(data));
   /*
- $.post({
-   url: http,
-   data:JSON.stringify(data);,
+ $.post(
+   "http://192.168.2.29:9000/soul",
+   data,
    function(success){
-     alert("SUCCESS: "+success);
+     alert("SUCCESS: ");
    },
-   function(error){
-     alert("Error: "+error);
+   "json"
+ );
+ */
+ $.ajax({
+   type: 'POST',
+   url: "http://192.168.2.29:9000/soul",
+   data: data,
+   success: function(success){
+     alert(success);
    }
  });
- */
 }
