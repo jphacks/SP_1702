@@ -63,10 +63,23 @@ function sendSoulInfo(ondevice, id) {
 
 function showSoul(){
   $soul = $("#soul");
+  //$soul.show().;
   $soul.css("visibility","visible");
+  changedBtnColor(0);
+  //bigSoul();
 }
 
 function hideSoul(){
   $soul = $("#soul");
   $soul.css("visibility","hidden");
+  changedBtnColor(1);
+}
+
+function changedBtnColor(flag){
+  if(flag){
+    $("#soulBtn").css("opacity", "0.2");
+    //$("#soulBtn").css("background-color: lemonchiffon");
+  }else{
+    $("#soulBtn").css("opacity", "1.0");
+  }
 }
