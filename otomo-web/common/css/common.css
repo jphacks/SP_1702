@@ -4,7 +4,7 @@ html, body {
 	width: 100%;
 	height: 100%;
 	font-size: 4vh;
-	background-color: #cfd8dc;
+	background-size: 110% auto;
 }
 
 img {
@@ -39,8 +39,12 @@ img {
 	margin-top: 10%;
 }
 
-.mt20 {
-	margin-top: 20%;
+.mt15 {
+	margin-top: 15%;
+}
+
+.mt30 {
+	margin-top: 30%;
 }
 
 .mt5 {
@@ -51,8 +55,12 @@ img {
 	margin-bottom: 10%;
 }
 
-.mb20 {
-	margin-bottom: 20%;
+.mb15 {
+	margin-bottom: 15%;
+}
+
+.mb30 {
+	margin-bottom: 30%;
 }
 
 .mb5 {
