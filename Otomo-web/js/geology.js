@@ -1,5 +1,24 @@
+function sendGeo(latV, lngV){
+
+  var data={
+    lat: latV,
+    lng: lngV
+  }
+  //alert(JSON.stringify(data));
+
+  $.ajax({
+    type: 'POST',
+    url: "http://",
+    data: JSON.stringify(data),
+    success: function(success){
+      //alert(success);
+    }
+  });
+}
+
 function apiGeolocationSuccess(position) {
-    alert("API geolocation success!\n\nlat = " + position.coords.latitude + "\nlng = " + position.coords.longitude);
+  sendGeo(position.coords.latitude, position.coords.longitude);
+    //alert("API geolocation success!\n\nlat = " + position.coords.latitude + "\nlng = " + position.coords.longitude);
 };
 
 function tryAPIGeolocation() {

@@ -39,7 +39,7 @@ function sendSoulInfo(ondevice, id) {
     on_device : ondevice,
     user_id   : id
   };
-  alert(JSON.stringify(data));
+  //alert(JSON.stringify(data));
   /*
  $.post(
    "http://192.168.2.29:9000/soul",
@@ -55,7 +55,7 @@ function sendSoulInfo(ondevice, id) {
    url: "http://192.168.2.29:9000/soul",
    data: JSON.stringify(data),
    success: function(success){
-     alert(success);
+     //alert(success);
    }
  });
 
