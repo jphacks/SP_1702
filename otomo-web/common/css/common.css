@@ -64,27 +64,37 @@ img {
 	margin-left: 20%;
 }
 
+.pt5{
+	padding-top: 5%;
+}
+.pb5{
+	padding-bottom: 5%;
+}
+
 .text-small{
 	font-size: 2vh;
 }
 
 .bg-yellow{
-	color: #696969;
+	color: white;
 	background-color: gold;
+	weight: 900;
+	text-shadow: 1px 1px 0 #000;
+	font-size: 5vh;
 }
 
 .bg-linegreen{
-	color: #696969;
+	color: white;
 	background-color: #1dcd00;
 }
 
 .bg-orange{
-	color: #696969;
+	color: white;
 	background-color: orange;
 }
 
 .btn-large{
-	width: 90%;
+	width: 50%;
 }
 
 .btn-middle{
@@ -103,4 +113,8 @@ img {
     -webkit-transform: translateY(4px);
     transform: translateY(4px);/*下に動く*/
     border-bottom: none;/*線を消す*/
+}
+
+.rad-button {
+    border-radius:50%;
 }
