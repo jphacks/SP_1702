@@ -51,6 +51,7 @@ function sendSoulInfo(ondevice, id) {
    "json"
  );
  */
+ /*
  $.ajax({
    type: 'POST',
    url: "http://192.168.2.29:9000/soul",
@@ -59,28 +60,36 @@ function sendSoulInfo(ondevice, id) {
      //alert(success);
    }
  });
+ */
 
 }
 
 function showSoul(){
   $soul = $("#soul");
   //$soul.show().;
-  $soul.css("visibility","visible");
-  changedBtnColor(0);
+  //$soul.css("visibility","visible");
+  changedOpacity(0);
   //bigSoul();
 }
 
 function hideSoul(){
   $soul = $("#soul");
-  $soul.css("visibility","hidden");
-  changedBtnColor(1);
+  //$soul.css("visibility","hidden");
+  changedOpacity(1);
 }
 
-function changedBtnColor(flag){
+function changedOpacity(flag){
   if(flag){
     $("#soulBtn").css("opacity", "1.0");
+    $('#soul')
+        .css({opacity: '1'})
+        .animate({opacity: '0.0'}, 2000);
     //$("#soulBtn").css("background-color: lemonchiffon");
   }else{
     $("#soulBtn").css("opacity", "0.2");
+    $('#soul')
+        .css({opacity: '0.0'})
+        .animate({opacity: '1'}, 2000);
+
   }
 }
