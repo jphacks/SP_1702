@@ -10,7 +10,6 @@
   var SensorValueLoad = true;
 
   $(function () {
-    //$arrow = $("#arrow");
     $window = $(window);
 
     isMotion = false;
