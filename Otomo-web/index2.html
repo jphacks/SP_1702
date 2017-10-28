@@ -15,30 +15,50 @@
 
   <link rel="stylesheet" href="common/css/common.css" />
   <link rel="stylesheet" href="common/css/materialize.css" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 
 <body background="images/background.jpg" class="center">
 
-
+  <!--ナビゲーションバー -->
   <nav>
     <div class="nav-wrapper">
       <a href="#" class="brand-logo">Otomo</a>
     </div>
   </nav>
 
+  <!--Otomo -->
   <div idx="soul" class="otomoBody mt15">
     <img src="images/otomo.png" width="50%" alt="" />
   </div>
 
-  <div class="mt15 mb10">
-    <a id="soulBtn" class="bg-yellow square_btn btn-large rad-button" onclick="getSoul()">Let's Go</a>
-  </div>
 
-  <div class="mb5" style="width:90%;margin:auto">
-    <a class="square_btn bg-linegreen btn-middle" style="float:left" onclick="lineIntent()">Line</a>
-    <a class="square_btn bg-orange btn-middle" style="float:right" onclick="
-    tryGeolocation()">Geolocation</a>
-  </div>
+
+  <!--トリガーボタン群 -->
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col l4 s12"> <!-- LINEアクションボタン -->
+          <a class="square_btn bg-linegreen btn-middle"
+          style="float:left" onclick="lineIntent()">Line</a>
+        </div>
+        <div class="col l4 s12"> <!-- 位置情報取得ボタン -->
+          <a class="square_btn bg-orange btn-middle" style="float:right" onclick="
+          tryGeolocation()">Geolocation</a>
+        </div>
+        <div class="col l4 s12"> <!-- otomo遷移ボタン -->
+          <a id="soulBtn" class="bg-yellow square_btn btn-large rad-button" onclick="getSoul()">Let's Go</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © 2017 FUNtastic
+      </div>
+    </div>
+  </footer>
+
 
 </body>
 </html>
