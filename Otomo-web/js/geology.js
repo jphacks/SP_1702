@@ -4,17 +4,8 @@ function sendGeo(latV, lngV){
     lat: latV,
     lng: lngV
   }
-  alert(JSON.stringify(data));
-/*
-  $.ajax({
-    type: 'POST',
-    url: "http://",
-    data: JSON.stringify(data),
-    success: function(success){
-      //alert(success);
-    }
-  });
-  */
+  //alert(JSON.stringify(data));
+  lineIntent(latV+","+lngV);
 }
 
 function apiGeolocationSuccess(position) {
