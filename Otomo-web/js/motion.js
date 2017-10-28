@@ -7,6 +7,8 @@
 
   var isMotion;
 
+  var SensorValueLoad = true;
+
   $(function () {
     $arrow = $("#arrow");
     $window = $(window);
@@ -22,7 +24,7 @@
 
   // 加速度が変化
   function devicemotionHandler(event) {
-    //if (isMotion) return;
+    if (!SensorValueLoad) return;
 
     // 加速度
     // X軸
@@ -35,7 +37,7 @@
     $arrow.stop();
 
     var l = 20;
-    if (x > l) { // 右
+    if (x > l || x < -l || y > l || y < -l) { // 右
       $arrow.css({
         x: -stageW
       });
@@ -44,55 +46,29 @@
         "-moz-transform": "rotate(90deg)",
         "transform": "rotate(90deg)"
       });
-      alert("move!");
-    }
-    else if (x < -l) { // 左
-      $arrow.css({
-        x: stageW
-      });
-      $arrow.children("img").css({
-        "-webkit-transform": "rotate(-90deg)",
-        "-moz-transform": "rotate(-90deg)",
-        "transform": "rotate(-90deg)"
-      });
-      alert("move!");
-    }
-    else if (y > l) { // 上
-      $arrow.css({
-        y: stageH
-      });
-      $arrow.children("img").css({
-        "-webkit-transform": "rotate(0deg)",
-        "-moz-transform": "rotate(0deg)",
-        "transform": "rotate(0deg)"
-      });
-      alert("move!");
-    }
-    else if (y < -l) { // 下
-      $arrow.css({
-        y: -stageH
-      });
-      $arrow.children("img").css({
-        "-webkit-transform": "rotate(180deg)",
-        "-moz-transform": "rotate(180deg)",
-        "transform": "rotate(180deg)"
-      });
-      alert("move!");
+      pushSoul();
+      SensorValueLoad = false;
+      SensorValueLoadControl();
     }
     else return;
 
-          //alert(x);
 
     isMotion = true;
 
-    /*$arrow.delay(0).transition({x: 0, y: 0}, 300, "easeOutCubic", function () {
-      isMotion = false
-    });
-    */
   }
 
   function resizeHandler(event) {
     stageW = $window.width();
     stageH = $window.height();
+  }
+
+  function SensorValueLoadControl(){
+
+    if(SensorValueLoad == false){
+      setTimeout(function(){
+        SensorValueLoad = true;
+      }, 250);
+    }
+
   }
 })();
