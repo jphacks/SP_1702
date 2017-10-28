@@ -29,6 +29,10 @@ img {
 	text-align: center;
 }
 
+.left {
+	text-align: left;
+}
+
 
 .mt10 {
 	margin-top: 10px;
@@ -44,4 +48,16 @@ img {
 
 .mb20 {
 	margin-bottom: 20px;
+}
+
+.ml0{
+	margin-left: 0px;
+}
+
+.ml10{
+	margin-left: 10px;
+}
+
+.ml20{
+	margin-left: 20px;
 }
