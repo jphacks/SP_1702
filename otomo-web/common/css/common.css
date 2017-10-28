@@ -36,35 +36,39 @@ img {
 
 
 .mt10 {
-	margin-top: 10px;
+	margin-top: 10%;
 }
 
 .mt20 {
-	margin-top: 20px;
+	margin-top: 20%;
 }
 
-.mt50 {
-	margin-top: 50px;
+.mt5 {
+	margin-top: 5%;
 }
 
 .mb10 {
-	margin-bottom: 10px;
+	margin-bottom: 10%;
 }
 
 .mb20 {
-	margin-bottom: 20px;
+	margin-bottom: 20%;
+}
+
+.mb5 {
+	margin-bottom: 5%;
 }
 
 .ml0{
-	margin-left: 0px;
+	margin-left: 0%;
 }
 
 .ml10{
-	margin-left: 10px;
+	margin-left: 10%;
 }
 
 .ml20{
-	margin-left: 20px;
+	margin-left: 20%;
 }
 
 .text-small{
@@ -87,7 +91,7 @@ img {
 }
 
 .btn-large{
-	width: 85%;
+	width: 90%;
 }
 
 .btn-middle{
@@ -96,7 +100,7 @@ img {
 
 .square_btn{
     display: inline-block;
-    padding: 0.5em 0.2em;
+    padding: 0.5em 0.1em;
     text-decoration: none;
     border-bottom: solid 4px #627295;
     border-radius: 3px;
