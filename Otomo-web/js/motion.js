@@ -11,6 +11,7 @@
 
   $(function () {
     $window = $(window);
+      hideSoul();
 
     isMotion = false;
 

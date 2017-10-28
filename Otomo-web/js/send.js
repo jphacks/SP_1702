@@ -1,5 +1,6 @@
-var on_device=false;
+var on_device=true;
 var user_id = 1;
+
 
 /*****************************************/
 /*************Soulの受信関数**************/
@@ -77,9 +78,9 @@ function hideSoul(){
 
 function changedBtnColor(flag){
   if(flag){
-    $("#soulBtn").css("opacity", "0.2");
+    $("#soulBtn").css("opacity", "1.0");
     //$("#soulBtn").css("background-color: lemonchiffon");
   }else{
-    $("#soulBtn").css("opacity", "1.0");
+    $("#soulBtn").css("opacity", "0.2");
   }
 }
