@@ -44,6 +44,7 @@
         "-moz-transform": "rotate(90deg)",
         "transform": "rotate(90deg)"
       });
+      alert("move!");
     }
     else if (x < -l) { // 左
       $arrow.css({
@@ -54,7 +55,7 @@
         "-moz-transform": "rotate(-90deg)",
         "transform": "rotate(-90deg)"
       });
-      //alert("left");
+      alert("move!");
     }
     else if (y > l) { // 上
       $arrow.css({
@@ -65,6 +66,7 @@
         "-moz-transform": "rotate(0deg)",
         "transform": "rotate(0deg)"
       });
+      alert("move!");
     }
     else if (y < -l) { // 下
       $arrow.css({
@@ -75,6 +77,7 @@
         "-moz-transform": "rotate(180deg)",
         "transform": "rotate(180deg)"
       });
+      alert("move!");
     }
     else return;
 
