@@ -50,7 +50,6 @@ function sendSoulInfo(ondevice, id) {
    "json"
  );
  */
- /*
  $.ajax({
    type: 'POST',
    url: "http://192.168.2.29:9000/soul",
@@ -59,7 +58,7 @@ function sendSoulInfo(ondevice, id) {
      alert(success);
    }
  });
- */
+
 }
 
 function showSoul(){
