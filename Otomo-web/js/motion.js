@@ -10,13 +10,13 @@
   var SensorValueLoad = true;
 
   $(function () {
-    $arrow = $("#arrow");
+    //$arrow = $("#arrow");
     $window = $(window);
 
     isMotion = false;
 
-    $(window).on("resize", resizeHandler);
-    resizeHandler();
+    //$(window).on("resize", resizeHandler);
+    //resizeHandler();
 
     // DeviceMotion Event
     window.addEventListener("devicemotion", devicemotionHandler);
@@ -35,10 +35,11 @@
     // Z軸
     var z = event.acceleration.z;
 
-    $arrow.stop();
+    //$arrow.stop();
 
     var l = 20;
     if (x > l || x < -l || y > l || y < -l) { // 右
+      /*
       $arrow.css({
         x: -stageW
       });
@@ -47,6 +48,7 @@
         "-moz-transform": "rotate(90deg)",
         "transform": "rotate(90deg)"
       });
+      */
       pushSoul();
       SensorValueLoad = false;
       SensorValueLoadControl();
@@ -58,11 +60,12 @@
 
   }
 
+/*
   function resizeHandler(event) {
     stageW = $window.width();
     stageH = $window.height();
   }
-
+*/
   function SensorValueLoadControl(){
 
     if(SensorValueLoad == false){
