@@ -72,25 +72,31 @@ img {
 }
 
 .bg-yellow{
+	color: #696969;
 	background-color: gold;
 }
 
 .bg-linegreen{
+	color: #696969;
 	background-color: #1dcd00;
 }
 
 .bg-orange{
+	color: #696969;
 	background-color: orange;
 }
 
 .btn-large{
-	color: 696969;
-	background-color:gold;
+	width: 85%;
+}
+
+.btn-middle{
+	width: 47%;
 }
 
 .square_btn{
     display: inline-block;
-    padding: 0.5em 1em;
+    padding: 0.5em 0.2em;
     text-decoration: none;
     border-bottom: solid 4px #627295;
     border-radius: 3px;
