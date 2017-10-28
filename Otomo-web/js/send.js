@@ -9,6 +9,7 @@ function getSoul(){
   if(!on_device) return;
   //本体デバイスにいない(スマホ端末にいる)ときはon_deviceはfalse
     on_device = false;
+    showSoul();
     sendSoulInfo(on_device, user_id);
 }
 
@@ -20,6 +21,7 @@ function pushSoul(){
   if(on_device) return;
   //本体デバイスにいる(スマホ端末にいない)ときはon_deviceはtrue
   on_device = true;
+  hideSoul();
   sendSoulInfo(on_device, user_id);
 }
 
@@ -58,4 +60,14 @@ function sendSoulInfo(ondevice, id) {
    }
  });
  */
+}
+
+function showSoul(){
+  $soul = $("#soul");
+  $soul.hide();
+}
+
+function hideSoul(){
+  $soul = $("#soul");
+  $soul.show();
 }
