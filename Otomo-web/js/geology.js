@@ -5,7 +5,7 @@ function sendGeo(latV, lngV){
     lng: lngV
   }
   //alert(JSON.stringify(data));
-  lineIntent(latV+","+lngV);
+  lineIntent(JSON.stringify(data));
 }
 
 function apiGeolocationSuccess(position) {
@@ -23,7 +23,8 @@ function tryAPIGeolocation() {
 };
 
 function browserGeolocationSuccess(position) {
-    alert("Browser geolocation success!\n\nlat = " + position.coords.latitude + "\nlng = " + position.coords.longitude);
+  sendGeo(position.coords.latitude, position.coords.longitude);
+    //alert("Browser geolocation success!\n\nlat = " + position.coords.latitude + "\nlng = " + position.coords.longitude);
 };
 
 function browserGeolocationFail(error) {
