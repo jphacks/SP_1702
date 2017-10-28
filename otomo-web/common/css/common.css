@@ -3,6 +3,7 @@
 html, body {
 	width: 100%;
 	height: 100%;
+	font-size: 5vh;
 }
 
 img {
@@ -26,4 +27,21 @@ img {
 
 .center {
 	text-align: center;
+}
+
+
+.mt10 {
+	margin-top: 10px;
+}
+
+.mt20 {
+	margin-top: 20px;
+}
+
+.mb10 {
+	margin-bottom: 10px;
+}
+
+.mb20 {
+	margin-bottom: 20px;
 }
