@@ -25,6 +25,7 @@
   // 加速度が変化
   function devicemotionHandler(event) {
     if (!SensorValueLoad) return;
+    if (on_device) return;
 
     // 加速度
     // X軸

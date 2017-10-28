@@ -1,11 +1,12 @@
+var on_device=false;
 function getSoul(){
-    var on_device = false;
+    on_device = false;
     var user_id = 1
     sendSoulInfo(on_device, user_id);
 }
 
 function pushSoul(){
-  var on_device = true;
+  on_device = true;
   var user_id = 1
   sendSoulInfo(on_device, user_id);
 }
