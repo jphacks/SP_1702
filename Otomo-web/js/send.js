@@ -26,7 +26,6 @@ function getSoul(){
   audioPlay(0);
   showSoul();
   sendSoulInfo(on_device, user_id);
-  audioInitialize();
 }
 
 /*****************************************/
@@ -40,7 +39,6 @@ function pushSoul(){
   audioPlay(1);
   hideSoul();
   sendSoulInfo(on_device, user_id);
-  audioInitialize();
 }
 
 /*****************************************/
