@@ -1,4 +1,4 @@
-# Otomo
+# Otomo（オトモ）
 
 [![Product Name](https://raw.github.com/GabLeRoux/WebMole/master/ressources/WebMole_Youtube_Video.png)](https://www.youtube.com/channel/UC4PtjOfZTbVp9DwtJv82Lzg)
 
@@ -45,6 +45,7 @@
 #### フレームワーク・ライブラリ・モジュール
 ・Django
 ・Jin
+・
 
 #### デバイス
 ・iPhone
@@ -65,7 +66,5 @@
 ・全ての通信の中継を行うGOで書いたサーバ
 
 #### 2日間に開発した独自の機能・技術
-・独自で開発したものの内容をこちらに記載してください
-・特に力を入れた部分をファイルリンク、またはcommit_idを記載してください（任意）
 ・音声認識機能（gitリポジトリ：SP_1704）
 ・全ての通信の中継を行うGOで書いたサーバ（gitリポジトリ：SP_1703）
