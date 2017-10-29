@@ -1,4 +1,4 @@
-# サンプル（プロダクト名）
+# Otomo
 
 [![Product Name](https://raw.github.com/GabLeRoux/WebMole/master/ressources/WebMole_Youtube_Video.png)](https://www.youtube.com/channel/UC4PtjOfZTbVp9DwtJv82Lzg)
 
@@ -35,41 +35,37 @@
 #### API・データ
 今回スポンサーから提供されたAPI、製品などの外部技術があれば記述をして下さい。
 
-*Google Speach Recognition
-*ぐるなびAPI
-*LIFULL HOME'S API
-*Docomo 雑談API
-*Open Jtalk
-*
+・Google Speach Recognition
+・ぐるなびAPI
+・LIFULL HOME'S API
+・Docomo 雑談API
+・Open Jtalk
+
 
 #### フレームワーク・ライブラリ・モジュール
-*Django
-*Jin
-*
-*
-*
-*
+・Django
+・Jin
 
 #### デバイス
-*iPhone
-*Arduino
-*温度センサー
-*湿度センサー
-*光センサー
-*マイク
-*パソコン
+・iPhone
+・Arduino
+・温度センサー
+・湿度センサー
+・光センサー
+・マイク
+・パソコン
 
 ### 研究内容・事前開発プロダクト（任意）
 特にありません。
 
 ### 独自開発技術（Hack Dayで開発したもの）
-*スマホ用のモーション感知
-*APIを利用した音声認識と読み上げの機能
-*各種センサーの値をシリアルで送りDBで保存監視する機能
-*全ての通信の中継を行うGOで書いたサーバ
+・スマホ用のモーション感知
+・APIを利用した音声認識と読み上げの機能
+・各種センサーの値をシリアルで送りDBで保存監視する機能
+・全ての通信の中継を行うGOで書いたサーバ
 
 #### 2日間に開発した独自の機能・技術
-*独自で開発したものの内容をこちらに記載してください
-*特に力を入れた部分をファイルリンク、またはcommit_idを記載してください（任意）
-*音声認識機能（gitリポジトリ：SP_1704）
-*全ての通信の中継を行うGOで書いたサーバ（gitリポジトリ：SP_1703）
+・独自で開発したものの内容をこちらに記載してください
+・特に力を入れた部分をファイルリンク、またはcommit_idを記載してください（任意）
+・音声認識機能（gitリポジトリ：SP_1704）
+・全ての通信の中継を行うGOで書いたサーバ（gitリポジトリ：SP_1703）
