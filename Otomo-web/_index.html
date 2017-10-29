@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>test</title>
+  <meta charset="utf-8" />
+  <script type="text/javascript" src="lib/jquery/jquery-2.0.3.min.js"></script>
+  <script type="text/javascript" src="js/motion.js"></script>
+  <script type="text/javascript" src="js/send.js"></script>
+  <script type="text/javascript" src="js/intent.js"></script>
+  <script type="text/javascript" src="js/geology.js"></script>
+  <script type="text/javascript" src="js/OtomoAnime.js"></script>
+
+  <link rel="stylesheet" href="common/css/common.css" />
+</head>
+
+<body background="images/background.jpg" class="center">
+
+  <div id="namediv" class="mb5 pt5 pb5" style="background-color: gold;"><span class="left text-small">Name:</span><span class="" id="name">FUNstastic</span></div>
+
+  <div id="useriddiv" class="mb15"><span class="left text-small">ID:</span><span class="" id="userid">FUNLOVE2017</span></div>
+
+  <div id="soul" class="" ><img src="images/otomo.png" width="50%" alt="" /></div>
+
+  <div class="mt15 mb10">
+    <a id="soulBtn" class="bg-yellow square_btn btn-large rad-button" onclick="getSoul()">Let's Go</a>
+  </div>
+
+  <div class="mb5" style="width:90%;margin:auto">
+    <a class="square_btn bg-linegreen btn-middle" style="float:left" onclick="lineIntent()">Line</a>
+    <a class="square_btn bg-orange btn-middle" style="float:right" onclick="
+    tryGeolocation()">Geolocation</a>
+  </div>
+
+</body>
+</html>
