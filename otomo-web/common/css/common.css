@@ -29,7 +29,7 @@ img {
 }
 
 .mt30 {
-	margin-top: 30%;
+	margin-top: 20%;
 }
 
 .mt5 {
@@ -117,4 +117,8 @@ img {
 
 .rad-button {
 	border-radius:50%;
+}
+
+.otomo-pos{
+	margin-top: -180px;
 }
