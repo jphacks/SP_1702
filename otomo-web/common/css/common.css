@@ -76,7 +76,11 @@ img {
 }
 
 .bg-yellow{
+<<<<<<< Updated upstream
 	color: white;
+=======
+	color: #696969;
+>>>>>>> Stashed changes
 	background-color: gold;
 	weight: 900;
 	text-shadow: 1px 1px 0 #000;
@@ -84,17 +88,25 @@ img {
 }
 
 .bg-linegreen{
+<<<<<<< Updated upstream
 	color: white;
+=======
+	color: #696969;
+>>>>>>> Stashed changes
 	background-color: #1dcd00;
 }
 
 .bg-orange{
+<<<<<<< Updated upstream
 	color: white;
+=======
+	color: #696969;
+>>>>>>> Stashed changes
 	background-color: orange;
 }
 
 .btn-large{
-	width: 50%;
+	width: 70%;
 }
 
 .btn-middle{
@@ -121,4 +133,13 @@ img {
 
 .otomo-pos{
 	margin-top: -180px;
+}
+
+.icon-center {
+	margin-top: 10%;
+	margin-bottom: auto;
+}
+
+.f5 {
+	font-size: 5vh;
 }

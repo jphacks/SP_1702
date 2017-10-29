@@ -46,19 +46,19 @@
 
 
   <!--トリガーボタン群 -->
-  <div class="fixed-action-btn toolbar">
+  <div class="fixed-action-btn toolbar" style="height:15%">
     <a class="btn-floating btn-large yellow darken-3">
       <i class="large material-icons">mode_edit</i>
     </a>
     <ul>
       <li class="waves-effect waves-light"> <!-- LINEアクションボタン -->
-        <a href="#!" onclick="lineIntent('Otomo')"><i class="material-icons">chat</i></a>
+        <a href="#!" onclick="lineIntent('Otomo')" class="icon-center"><i class="material-icons f5">chat</i></a>
       </li>
       <li class="waves-effect waves-light"> <!-- 位置情報取得ボタン -->
-        <a href="#!" onclick="tryGeolocation()"><i class="material-icons">gps_fixed</i></a>
+        <a href="#!" onclick="tryGeolocation()" class="icon-center"><i class="material-icons f5">gps_fixed</i></a>
       </li>
       <li class="waves-effect waves-light"> <!-- otomo遷移ボタン -->
-        <a href="#!" id="soulBtn" onclick="getSoul()"><i class="material-icons">get_app</i></a>
+        <a href="#!" id="soulBtn" onclick="getSoul()" class="icon-center"><i class="material-icons f5">get_app</i></a>
       </li>
     </ul>
   </div>
