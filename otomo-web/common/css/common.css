@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+html, body {
+	width: 100%;
+	height: 100%;
+	font-size: 4vh;
+	background-size: 110% auto;
+}
+
+img {
+	vertical-align: top;
+}
+
+.center {
+	text-align: center;
+}
+
+.left {
+	text-align: left;
+}
+
+
+.mt10 {
+	margin-top: 10%;
+}
+
+.mt15 {
+	margin-top: 25%;
+}
+
+.mt30 {
+	margin-top: 20%;
+}
+
+.mt5 {
+	margin-top: 5%;
+}
+
+.mb10 {
+	margin-bottom: 10%;
+}
+
+.mb15 {
+	margin-bottom: 15%;
+}
+
+.mb30 {
+	margin-bottom: 30%;
+}
+
+.mb5 {
+	margin-bottom: 5%;
+}
+
+.ml0{
+	margin-left: 0%;
+}
+
+.ml10{
+	margin-left: 10%;
+}
+
+.ml20{
+	margin-left: 20%;
+}
+
+.pt5{
+	padding-top: 5%;
+}
+.pb5{
+	padding-bottom: 5%;
+}
+
+.text-small{
+	font-size: 2vh;
+}
+
+.bg-yellow{
+<<<<<<< Updated upstream
+	color: white;
+=======
+	color: #696969;
+>>>>>>> Stashed changes
+	background-color: gold;
+	weight: 900;
+	text-shadow: 1px 1px 0 #000;
+	font-size: 5vh;
+}
+
+.bg-linegreen{
+<<<<<<< Updated upstream
+	color: white;
+=======
+	color: #696969;
+>>>>>>> Stashed changes
+	background-color: #1dcd00;
+}
+
+.bg-orange{
+<<<<<<< Updated upstream
+	color: white;
+=======
+	color: #696969;
+>>>>>>> Stashed changes
+	background-color: orange;
+}
+
+.btn-large{
+	width: 70%;
+}
+
+.btn-middle{
+	width: 47%;
+}
+
+.square_btn{
+	display: inline-block;
+	padding: 0.5em 0.1em;
+	text-decoration: none;
+	border-bottom: solid 4px #627295;
+	border-radius: 3px;
+}
+.square_btn:active {/*ボタンを押したとき*/
+	-ms-transform: translateY(4px);
+	-webkit-transform: translateY(4px);
+	transform: translateY(4px);/*下に動く*/
+	border-bottom: none;/*線を消す*/
+}
+
+.rad-button {
+	border-radius:50%;
+}
+
+.otomo-pos{
+	margin-top: -180px;
+}
+
+.icon-center {
+	margin-top: 10%;
+	margin-bottom: auto;
+}
+
+.f5 {
+	font-size: 5vh;
+}
