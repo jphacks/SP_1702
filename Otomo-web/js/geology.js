@@ -1,11 +1,6 @@
 function sendGeo(latV, lngV){
-
-  var data={
-    lat: latV,
-    lng: lngV
-  }
   //alert(JSON.stringify(data));
-  lineIntent(JSON.stringify(data));
+  lineIntent("/shop/"+latV+","+lngV);
 }
 
 function apiGeolocationSuccess(position) {
