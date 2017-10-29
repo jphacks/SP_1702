@@ -25,7 +25,6 @@
   // 加速度が変化
   function devicemotionHandler(event) {
     if (!SensorValueLoad) return;
-    if (on_device) return;
 
     // 加速度
     // X軸
@@ -36,7 +35,6 @@
     var z = event.acceleration.z;
 
     //$arrow.stop();
-
     var l = 20;
     if (x > l || x < -l || y > l || y < -l) { // 右
       /*
@@ -49,11 +47,17 @@
         "transform": "rotate(90deg)"
       });
       */
-      pushSoul();
-      SensorValueLoad = false;
-      SensorValueLoadControl();
+      if(on_device){
+        getSoul();
+        SensorValueLoad = false;
+        SensorValueLoadControl();
+      }else{
+        pushSoul();
+        SensorValueLoad = false;
+        SensorValueLoadControl();
+      }
     }
-    else return;
+    //else return;
 
 
     isMotion = true;
@@ -73,6 +77,5 @@
         SensorValueLoad = true;
       }, 250);
     }
-
   }
 })();
