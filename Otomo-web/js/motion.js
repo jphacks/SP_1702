@@ -51,10 +51,12 @@
         getSoul();
         SensorValueLoad = false;
         SensorValueLoadControl();
+        return;
       }else{
         pushSoul();
         SensorValueLoad = false;
         SensorValueLoadControl();
+        return;
       }
     }
     //else return;
