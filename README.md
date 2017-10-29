@@ -32,11 +32,11 @@
 ## 開発内容・開発技術
 ### 活用した技術
 #### API・データ
-・Google Speach Recognition\n
-・ぐるなびAPI\n
-・LIFULL HOME'S API\n
-・Docomo 雑談API\n
-・Open Jtalk\n
+・Google Speach Recognition<br/>
+・ぐるなびAPI<br/>
+・LIFULL HOME'S API<br/>
+・Docomo 雑談API<br/>
+・Open Jtalk<br/>
 
 
 #### フレームワーク・ライブラリ・モジュール
@@ -56,18 +56,18 @@
 特にありません。
 
 ### 独自開発技術（Hack Dayで開発したもの）
-・スマホ用のモーション感知\n
-・APIを利用した音声認識と読み上げの機能\n
-・各種センサーの値をシリアルで送りDBで保存監視する機能\n
-・全ての通信の中継を行うGOで書いたサーバ \n
+・スマホ用のモーション感知<br/>
+・APIを利用した音声認識と読み上げの機能<br/>
+・各種センサーの値をシリアルで送りDBで保存監視する機能<br/>
+・全ての通信の中継を行うGOで書いたサーバ <br/>
 
 #### 2日間に開発した独自の機能・技術
-・音声認識機能（gitリポジトリ：SP_1702_4）\n
-・全ての通信の中継を行うGOで書いたサーバ（gitリポジトリ：SP_1702_3）\n
+・音声認識機能（gitリポジトリ：SP_1702_4）<br/>
+・全ての通信の中継を行うGOで書いたサーバ（gitリポジトリ：SP_1702_3）<br/>
 
 #### Github リポジトリ
-・SP_1702   :README: https://github.com/jphacks/SP_1702　\n
-・SP_1702_1 :デバイス: https://github.com/jphacks/SP_1702_1 \n
-・SP_1702_2 :企業API利用: https://github.com/jphacks/SP_1702_2 \n
-・SP_1702_3 :APIサーバー(核): https://github.com/jphacks/SP_1702_3 \n
-・SP_1702_4 :音声対話: https://github.com/jphacks/SP_1702_4 \n
+・SP_1702   :README: https://github.com/jphacks/SP_1702<br/>
+・SP_1702_1 :デバイス: https://github.com/jphacks/SP_1702_1 <br/>
+・SP_1702_2 :企業API利用: https://github.com/jphacks/SP_1702_2 <br/>
+・SP_1702_3 :APIサーバー(核): https://github.com/jphacks/SP_1702_3 <br/>
+・SP_1702_4 :音声対話: https://github.com/jphacks/SP_1702_4 <br/>
