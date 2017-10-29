@@ -9,9 +9,9 @@ var user_id = 1;
 function getSoul(){
   if(!on_device) return;
   //本体デバイスにいない(スマホ端末にいる)ときはon_deviceはfalse
-    on_device = false;
-    showSoul();
-    sendSoulInfo(on_device, user_id);
+  on_device = false;
+  showSoul();
+  sendSoulInfo(on_device, user_id);
 }
 
 /*****************************************/
@@ -34,7 +34,7 @@ function sendSoulInfo(ondevice, id) {
   //サーバーとの通信データ形式
   /*
   {"on_device": bool,
-   "user_id": into}
+  "user_id": into}
   */
   var data={
     on_device : ondevice,
@@ -42,25 +42,25 @@ function sendSoulInfo(ondevice, id) {
   };
   //alert(JSON.stringify(data));
   /*
- $.post(
-   "http://192.168.2.29:9000/soul",
-   data,
-   function(success){
-     alert("SUCCESS: ");
-   },
-   "json"
- );
- */
- /*
- $.ajax({
-   type: 'POST',
-   url: "http://192.168.2.29:9000/soul",
-   data: JSON.stringify(data),
-   success: function(success){
-     //alert(success);
-   }
- });
- */
+  $.post(
+  "http://192.168.2.29:9000/soul",
+  data,
+  function(success){
+  alert("SUCCESS: ");
+},
+"json"
+);
+*/
+/*
+$.ajax({
+type: 'POST',
+url: "http://192.168.2.29:9000/soul",
+data: JSON.stringify(data),
+success: function(success){
+//alert(success);
+}
+});
+*/
 
 }
 
@@ -82,14 +82,20 @@ function changedOpacity(flag){
   if(flag){
     $("#soulBtn").css("opacity", "1.0");
     $('#soul')
-        .css({opacity: '1'})
-        .animate({opacity: '0.0'}, 2000);
+    .css({opacity: '1'})
+    .animate({opacity: '0.0'}, 2000);
     //$("#soulBtn").css("background-color: lemonchiffon");
   }else{
     $("#soulBtn").css("opacity", "0.2");
     $('#soul')
-        .css({opacity: '0.0'})
-        .animate({opacity: '1'}, 2000);
+    .css({opacity: '0.0'})
+    .animate({opacity: '1'}, 2000);
 
   }
+}
+
+function getSoulAudioPlay() {
+  audioElem = new Audio();
+  audioElem.src = "audio/getSoulAudio.mp3";
+  audioElem.play();
 }
