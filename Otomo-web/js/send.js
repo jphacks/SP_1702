@@ -1,6 +1,18 @@
 var on_device=true;
 var user_id = 1;
 
+var audio=[];
+function audioInitialize(){
+  for(var i=0;i<2;i++){
+    audio[i]=new Audio();
+  }
+  audio[0].src="audio/get.mp3";
+  audio[1].src="audio/push.mp3";
+}
+
+function audioPlay(num){
+  audio[num].play();
+}
 
 /*****************************************/
 /*************Soulの受信関数**************/
@@ -11,7 +23,9 @@ function getSoul(){
   //本体デバイスにいない(スマホ端末にいる)ときはon_deviceはfalse
     on_device = false;
     showSoul();
+    audioPlay(0);
     sendSoulInfo(on_device, user_id);
+    audioInitialize();
 }
 
 /*****************************************/
@@ -23,7 +37,9 @@ function pushSoul(){
   //本体デバイスにいる(スマホ端末にいない)ときはon_deviceはtrue
   on_device = true;
   hideSoul();
+  audioPlay(0);
   sendSoulInfo(on_device, user_id);
+  audioInitialize();
 }
 
 /*****************************************/
