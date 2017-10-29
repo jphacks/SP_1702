@@ -1,6 +1,6 @@
 # Otomo（オトモ）
 
-[![Product Name](https://raw.github.com/GabLeRoux/WebMole/master/ressources/WebMole_Youtube_Video.png)](https://www.youtube.com/channel/UC4PtjOfZTbVp9DwtJv82Lzg)
+[![Product Name](https://raw.github.com/GabLeRoux/WebMole/master/ressources/WebMole_Youtube_Video.png)](https://youtu.be/cvWeQ2NaXQ8)
 
 ## 製品概要
 ### 相棒（友達）×　Technology
